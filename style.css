@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+ul,ol{
+    list-style: none;
+}
+
+a{    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    
+}
+
+.menu{
+    background-color: aquamarine;
+    text-align: center;
+}
+.menu ul{
+    display: inline-flex;
+    
+}
+.menu ul li{
+    height: 50px;
+    width: 120px; 
+    line-height: 50px;
+    position: relative;
+    
+     
+}
+.menu ul li:hover{
+    background-color: aqua;
+}
+
+.menu ul li a:hover{
+    color: white;
+}
+
+.menu ul li.active{
+    background-color: aqua;
+}
+.menu ul li a:focus{
+    color: red;
+}
+.drop{
+display: none;
+    
+}
+
+.menu ul li:hover .drop{
+    display: block;
+    position: absolute;
+    top:50px;
+    left: 0;
+    
+}
+.menu ul li:hover .drop ul{
+    display: block;
+}
+
+.menu ul li:hover .drop ul li{
+    background-color: aquamarine;
+}
+.sub{
+    position: relative;
+}
+.sub_menu{
+    display: none;
+}
+.sub:hover .sub_menu{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 120px;
+    
+}
